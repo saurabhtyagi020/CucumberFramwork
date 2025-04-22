@@ -1,5 +1,6 @@
 package stepdefination;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -12,11 +13,13 @@ import static stepdefination.HooksShared.driver;
 
 public class MakeAppointment {
 
+
     @Given("I am on the Katalon home page")
     public void i_am_on_the_katalon_home_page() {
         System.out.println("Navigated to Katalon home page");
         // Add Selenium code here if needed:
         // driver.get("https://katalon-demo-cura.herokuapp.com/");
+        driver.get(PropertiesReader.readKey("url"));
 
 
     }
@@ -40,4 +43,5 @@ public class MakeAppointment {
 
 
     }
+
 }

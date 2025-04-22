@@ -14,7 +14,7 @@ public class HooksShared {
     {
         driver = new EdgeDriver();
         driver.manage().window().maximize();
-        driver.get(PropertiesReader.readKey("url"));
+
     }
 
     @After

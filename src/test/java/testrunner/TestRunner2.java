@@ -5,9 +5,8 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = "Feature",
 glue = "stepdefination"
-       , tags = " @appointment",
-        plugin = {"pretty","html:target/Cucumber/report.html"}
+       , tags = "@login"
 )
-public class TestRunner extends AbstractTestNGCucumberTests {
+public class TestRunner2 extends AbstractTestNGCucumberTests {
 
 }
